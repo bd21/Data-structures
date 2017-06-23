@@ -1,3 +1,5 @@
+import org.junit.Test;
+
 // Blake Denniston
 // 6/17/17
 // Implementation of many data structures for practice
@@ -30,6 +32,38 @@ public class Driver {
 		//Bucket sort
 		//Radix sort
 	}
-	public stat
+	@Test
+	private static void LinkedListTester() {
+		//create the list
+		LinkedList list = new LinkedList();
+		//traverse empty list
+		System.out.println(list.toString());
+		//traverse list with multiple nulls
+		list.add(null);
+		list.add(null);
+		list.add(null);
+		System.out.println(list.toString());
+		//delete from empty list
+		list.delete(0);
+		//fill list - inserting into list
+		for(int i = 0; i < 10; i++) {
+			Integer integer = new Integer(i);
+			Node node = new Node(integer);
+			list.add(node);
+		}
+		//traversing the list
+		System.out.println(list.toString());
+		
+		//deleting from the list
+		list.delete(0);
+		System.out.println(list.toString());
+		list.delete(6);
+		System.out.println(list.toString());
+		list.delete(33);
+		System.out.println(list.toString());
+		list.delete(-1);
+		System.out.println(list.toString());
+				 
+	}
 
 }
