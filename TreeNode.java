@@ -2,9 +2,9 @@
 public class TreeNode implements Comparable<TreeNode> {
 	public TreeNode left;
 	public TreeNode right;
-	public Object data;
+	public Integer data;
 	
-	public TreeNode(Object o) {
+	public TreeNode(Integer o) {
 		this.data = o;
 	}
 	

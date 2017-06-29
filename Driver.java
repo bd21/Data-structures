@@ -68,6 +68,17 @@ public class Driver {
 		System.out.println("All Linked List tests passed.");
 	}
 	private static void BinarySearchTreeTester() {
+		BinarySearchTree bst = new BinarySearchTree();
 		
+		bst.insert(new TreeNode(6));
+		bst.preorder();
+		bst.insert(new TreeNode(8));
+		bst.preorder();
+		bst.insert(new TreeNode(32));
+		bst.preorder();
+		bst.insert(new TreeNode(1));
+		bst.preorder();
+		bst.insert(new TreeNode(0));
+		bst.preorder();
 	}
 }
